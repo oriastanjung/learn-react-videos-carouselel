@@ -16,7 +16,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header className="px-10 py-6">
+          <nav className="w-full bg-white h-16 rounded-2xl border border-black border-b-8 border-r-4">
+
+          </nav>
+        </header>
+        {children}
+        </body>
     </html>
   );
 }
